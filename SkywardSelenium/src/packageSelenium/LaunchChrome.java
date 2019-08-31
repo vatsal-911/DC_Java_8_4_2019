@@ -11,16 +11,16 @@ public class LaunchChrome {
 		driver.get("https://apply.moveskyward.com");
 		//driver.get("https://apply.moveskyward.com/client/signup/");
 		driver.manage().window().maximize();
-		WebElement started = driver.findElementByXPath("//*[@id=\"root\"]/div/div/div/footer/div/ul/li[5]/a"); //Locate Get Started CTA
-		started.click(); 
-		WebElement em = driver.findElement(By.id("email"));
-		em.sendKeys("arjun4@yopmail.com");
-		WebElement password = driver.findElement(By.id("password"));
-		password.sendKeys("Vatsal@123");
-		WebElement confirm =driver.findElement(By.id("confirm_password"));
-		confirm.sendKeys("Vatsal@123");
-		WebElement submit =driver.findElementByXPath("//*[@id=\"root\"]/div/div/div/main/div/div[2]/form/button");
-		submit.click();
+		WebElement e1 = driver.findElementByXPath("//*[@id=\"root\"]/div/div/div/footer/div/ul/li[5]/a"); //Locate Get Started CTA
+		e1.click();
+		WebElement e2 = driver.findElement(By.id("email"));
+		e2.sendKeys("arjun5@yopmail.com");
+		WebElement e3 = driver.findElement(By.id("password"));
+		e3.sendKeys("Vatsal@123");
+		WebElement e4 =driver.findElement(By.id("confirm_password"));
+		e4.sendKeys("Vatsal@123");
+		WebElement e5 =driver.findElementByXPath("//*[@id=\"root\"]/div/div/div/main/div/div[2]/form/button");
+		e5.click();
 		System.out.println("Script executed & Terminated successfully!");
 		//driver.close();
 	}
