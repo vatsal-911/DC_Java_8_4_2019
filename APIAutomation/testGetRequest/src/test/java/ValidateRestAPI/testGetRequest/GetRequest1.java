@@ -11,7 +11,7 @@ public static void main(String[] args) { //main method
 	given() 
 	.contentType(ContentType.JSON)  // pre-condition set where Content type is JSON
 	.when()
-	.get("http://localhost:3000/posts"); // pass the API endpoint URI
+	.get("http://localhost:3000/comments"); // pass the API endpoint URI
 	System.out.println("Status Code is : " +res.statusCode());
 	if ((res.statusCode())==200) {       // verify if Response status is as Expected
 		System.out.println("Status Code verified succesfully");
@@ -20,5 +20,6 @@ public static void main(String[] args) { //main method
 		System.out.println("Status Code verification failed! The Status code recieved is "+res.statusCode());
 	}
 	System.out.println(res.asString());
+
 } //end of main
 } // end of class

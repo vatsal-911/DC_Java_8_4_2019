@@ -1,5 +1,6 @@
 package packageSelenium;
 
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -7,10 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LaunchChrome {
-	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\asus\\Desktop\\Selenium\\chromedriver.exe");
-		ChromeDriver driver=new ChromeDriver();
-		driver.get("https://apply.moveskyward.com");
+	public static void main(String[] args) throws InterruptedException 
+	{
+		
+		String email;  //Declare String var
+		System.out.println("Enter SignUp email address");
+		Scanner sc=new Scanner(System.in);
+		email=sc.next(); //User Input email entered
+		
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\asus\\Desktop\\Selenium\\chromedriver.exe"); //Define path to Chromedriver
+		ChromeDriver driver=new ChromeDriver(); //invoke ChromeDriver class 
+		driver.get("https://stage.moveskyward.com"); //pass target url Staging build
 		//driver.get("https://apply.moveskyward.com/client/signup/");
 		driver.manage().window().maximize();
 		
@@ -21,7 +30,7 @@ public class LaunchChrome {
 		//Fill Signup form
 		
 		WebElement em = driver.findElement(By.id("email"));
-		em.sendKeys("arjun52@yopmail.com");
+		em.sendKeys(email);
 		WebElement password = driver.findElement(By.id("password"));
 		password.sendKeys("Vatsal@123");
 		WebElement confirm =driver.findElement(By.id("confirm_password"));
@@ -37,13 +46,21 @@ public class LaunchChrome {
 		l_name.sendKeys("Pandit");
 		WebElement phone=driver.findElement(By.id("phone_number"));
 		phone.sendKeys("8765060092");
-		WebElement s1_next=driver.findElement(By.id("one_step_next_button"));
-		s1_next.click();
-		System.out.println("Script executed & Terminated successfully!");
+        Thread.sleep(5000);
+		WebElement s1_next=driver.findElementByXPath("//*[@id=\"one_step_next_button\"]"); //Locate Next button
+		if(s1_next.isEnabled()) //Verify if the located button is Enabled for click
+		{
+		s1_next.click();  //Perform click action
+		}
+		else {
+			System.out.println("Script executed & Terminated successfully!");
+	    	}
+		
 		
 		//Fill Onboarding Step 2
 		
 		//driver.close();  */
+		sc.close();
 	}
 
 }
