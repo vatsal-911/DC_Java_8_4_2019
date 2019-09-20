@@ -1,4 +1,4 @@
-package com.Collection.by.Map;
+package com.Collection.by.HashMap;
 
 import java.util.HashMap;
 import java.util.Set;
