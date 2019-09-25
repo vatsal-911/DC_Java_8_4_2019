@@ -60,6 +60,7 @@ public class TC2 {
 		Thread.sleep(5000);
 		driver.close();
 		System.out.println("Test Case 2 executed successfully");
+		System.out.println();
 	}
 
 }

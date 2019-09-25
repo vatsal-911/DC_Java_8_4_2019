@@ -49,5 +49,6 @@ public void CloseBrowser() throws InterruptedException {
 	Thread.sleep(5000);
 	driver.close();
 	System.out.println("Test Case 1 executed successfully");
+	System.out.println();
 }
 }

@@ -5,6 +5,8 @@
   <classes>
   <class name="com.testng.testsuite1.TC1"></class>
   <class name="com.testng.testsuite1.TC2"></class>
+  <class name="com.testng.testsuite1.TC3"></class>
+  <class name="com.testng.testsuite1.TC4"></class>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
