@@ -58,7 +58,7 @@ public class TC4 {
 		Thread.sleep(6000);
 		
 		//Subscribe the Channel of the video
-		WebElement subscribe_selector=driver.findElement(By.xpath("//*[@id=\"subscribe-button\"]"));
+		WebElement subscribe_selector=driver.findElement(By.xpath("//*[@id=\"subscribe-button\"]/ytd-subscribe-button-renderer/paper-button/yt-formatted-string"));
 		subscribe_selector.click();
 		System.out.println("Subscription button clicked");
 		Thread.sleep(5000);
@@ -70,7 +70,8 @@ public class TC4 {
 		
 		//Get Channel name of the Video 
 		WebElement channel_name=driver.findElement(By.xpath("//ytd-video-secondary-info-renderer/div/div[2]/ytd-video-owner-renderer/div[1]/ytd-channel-name/div/div/yt-formatted-string"));
-		channel_name.click();
+		String Channel=channel_name.getText();
+		System.out.println("The Channel subscribed to is: "+Channel);
 	}
 	
 	@AfterMethod

@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="177895" started-at="2019-09-25T13:13:46Z" finished-at="2019-09-25T13:16:44Z">
+  <suite name="Default suite" duration-ms="75052" started-at="2019-09-26T08:26:31Z" finished-at="2019-09-26T08:27:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="177895" started-at="2019-09-25T13:13:46Z" finished-at="2019-09-25T13:16:44Z">
-      <class name="com.testng.testsuite1.TC1">
-        <test-method status="PASS" signature="LaunchChrome()[pri:0, instance:com.testng.testsuite1.TC1@66a3ffec]" name="LaunchChrome" is-config="true" duration-ms="25315" started-at="2019-09-25T18:43:46Z" finished-at="2019-09-25T18:44:12Z">
+    <test name="Default test" duration-ms="75052" started-at="2019-09-26T08:26:31Z" finished-at="2019-09-26T08:27:46Z">
+      <class name="com.testng.testsuite1.TC4">
+        <test-method status="PASS" signature="LaunchChrome()[pri:0, instance:com.testng.testsuite1.TC4@47c62251]" name="LaunchChrome" is-config="true" duration-ms="40787" started-at="2019-09-26T13:56:31Z" finished-at="2019-09-26T13:57:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchChrome -->
-        <test-method status="PASS" signature="TestCase()[pri:0, instance:com.testng.testsuite1.TC1@66a3ffec]" name="TestCase" duration-ms="11312" started-at="2019-09-25T18:44:12Z" finished-at="2019-09-25T18:44:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.testng.testsuite1.TC1@66a3ffec]" name="CloseBrowser" is-config="true" duration-ms="5373" started-at="2019-09-25T18:44:23Z" finished-at="2019-09-25T18:44:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.testng.testsuite1.TC1 -->
-      <class name="com.testng.testsuite1.TC2">
-        <test-method status="PASS" signature="LaunchChrome()[pri:0, instance:com.testng.testsuite1.TC2@6093dd95]" name="LaunchChrome" is-config="true" duration-ms="36402" started-at="2019-09-25T18:44:28Z" finished-at="2019-09-25T18:45:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchChrome -->
-        <test-method status="PASS" signature="TestCase()[pri:0, instance:com.testng.testsuite1.TC2@6093dd95]" name="TestCase" duration-ms="29752" started-at="2019-09-25T18:45:05Z" finished-at="2019-09-25T18:45:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:com.testng.testsuite1.TC2@6093dd95]" name="CloseBrowser" is-config="true" duration-ms="5652" started-at="2019-09-25T18:45:34Z" finished-at="2019-09-25T18:45:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- com.testng.testsuite1.TC2 -->
-      <class name="com.testng.testsuite1.TC3">
-        <test-method status="PASS" signature="LaunchChrome()[pri:0, instance:com.testng.testsuite1.TC3@5622fdf]" name="LaunchChrome" is-config="true" duration-ms="36106" started-at="2019-09-25T18:45:40Z" finished-at="2019-09-25T18:46:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchChrome -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.testng.testsuite1.TC3@5622fdf]" name="test" duration-ms="27480" started-at="2019-09-25T18:46:16Z" finished-at="2019-09-25T18:46:44Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.testng.testsuite1.TC4@47c62251]" name="test" duration-ms="30588" started-at="2019-09-26T13:57:12Z" finished-at="2019-09-26T13:57:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testng.testsuite1.TC3@5622fdf]" name="closeBrowser" is-config="true" duration-ms="450" started-at="2019-09-25T18:46:44Z" finished-at="2019-09-25T18:46:44Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testng.testsuite1.TC4@47c62251]" name="closeBrowser" is-config="true" duration-ms="3599" started-at="2019-09-26T13:57:43Z" finished-at="2019-09-26T13:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.testng.testsuite1.TC3 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.testng.testsuite1.TC4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
