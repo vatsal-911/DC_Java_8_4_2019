@@ -58,7 +58,7 @@ public class TC4 {
 		Thread.sleep(6000);
 		
 		//Subscribe the Channel of the video
-		WebElement subscribe_selector=driver.findElement(By.xpath("//*[@id=\"subscribe-button\"]/ytd-subscribe-button-renderer/paper-button/yt-formatted-string"));
+		WebElement subscribe_selector=driver.findElement(By.xpath("/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div/div[7]/div[3]/ytd-video-secondary-info-renderer/div/div[2]/div"));
 		subscribe_selector.click();
 		System.out.println("Subscription button clicked");
 		Thread.sleep(5000);
