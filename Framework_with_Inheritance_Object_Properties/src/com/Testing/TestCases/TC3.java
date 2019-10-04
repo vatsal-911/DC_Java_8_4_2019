@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.Testing.Base.Base;
+import com.Testing.Pages.Login;
+import com.Testing.Pages.VideoPlay;
 
 public class TC3 extends Base {
 
@@ -12,25 +14,13 @@ public class TC3 extends Base {
 	public void test() throws InterruptedException {
 		
 		//Login to YouTube account 
-		WebElement login=driver.findElement(By.xpath(pr.getProperty("login_page_xpath")));
-		login.click();
-		WebElement username=driver.findElement(By.xpath(pr.getProperty("input_username_xpath")));
-		username.sendKeys(pr.getProperty("email_value"));
-		WebElement next_1=driver.findElement(By.xpath(pr.getProperty("next_username_xpath")));
-		next_1.click();
-		WebElement pass=driver.findElement(By.xpath(pr.getProperty("input_password_xpath")));
-		pass.sendKeys(pr.getProperty("password_value"));
-		WebElement next_2=driver.findElement(By.xpath(pr.getProperty("next_password_xpath")));
-		next_2.click();
+		Login l=new Login(driver, pr);
+		l.SignIn(pr.getProperty("email_value"), pr.getProperty("password_value"));
 		Thread.sleep(5000);
 		
-		//Get Total Videos count
-		java.util.List<WebElement> all= driver.findElements(By.id(pr.getProperty("videos_xpath")));
-		System.out.println("Total videos are : "+all.size());
-		
-		//Play Video
-		all.get(2).click();
-		System.out.println("Video was launched, now Like the playing video");
+		//Play a Video
+		VideoPlay play=new VideoPlay(driver, pr);
+		play.PlayVideo();
 		Thread.sleep(6000);
 		
 		//Like Currently playing video
