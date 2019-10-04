@@ -1,4 +1,4 @@
-package org.Testing.TestScripts;
+package org.Testing.TestCases;
 
 import java.io.IOException;
 import java.util.Properties;
