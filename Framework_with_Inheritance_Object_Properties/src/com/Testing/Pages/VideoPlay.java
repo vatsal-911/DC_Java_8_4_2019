@@ -24,6 +24,6 @@ public class VideoPlay {
 				
 				//Play Video
 				all.get(2).click();
-				System.out.println("Video was launched, now Like the playing video");
+				System.out.println("Video was launched");
 	}
 }
