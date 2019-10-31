@@ -1,5 +1,7 @@
 package com.Testing.TestCases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -7,11 +9,12 @@ import org.testng.annotations.Test;
 import com.Testing.Base.Base;
 import com.Testing.Pages.Login;
 import com.Testing.Pages.VideoPlay;
+import com.Testing.Utilities.Screenshot;
 
 public class TC3 extends Base {
 
 	@Test
-	public void test() throws InterruptedException {
+	public void test() throws InterruptedException, IOException {
 		
 		//Login to YouTube account 
 		Login l=new Login(driver, pr);
@@ -26,6 +29,7 @@ public class TC3 extends Base {
 		//Like Currently playing video
 		WebElement like_selector=driver.findElement(By.xpath(pr.getProperty("like_xpath")));
 		like_selector.click();
+		Screenshot.CaptureScreenshot(driver, "C:\\Users\\asus\\Desktop\\Images\\third.png");
 		Thread.sleep(5000);
 		
 		//Get Video title of playing video

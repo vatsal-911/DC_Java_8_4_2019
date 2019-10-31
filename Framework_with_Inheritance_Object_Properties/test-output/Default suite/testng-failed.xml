@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Testing.TestCases.TC2">
+      <class name="com.Testing.TestCases.TC1">
         <methods>
-          <include name="CloseBrowser"/>
           <include name="TestCase"/>
+          <include name="CloseBrowser"/>
           <include name="LaunchBrowser"/>
         </methods>
-      </class> <!-- com.Testing.TestCases.TC2 -->
+      </class> <!-- com.Testing.TestCases.TC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

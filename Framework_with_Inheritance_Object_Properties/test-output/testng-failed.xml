@@ -1,39 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.Testing.TestCases.TC2">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="LaunchBrowser"/>
-        </methods>
-      </class> <!-- com.Testing.TestCases.TC2 -->
-      <class name="com.Testing.TestCases.TC5">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="LaunchBrowser"/>
-        </methods>
-      </class> <!-- com.Testing.TestCases.TC5 -->
       <class name="com.Testing.TestCases.TC1">
         <methods>
+          <include name="TestCase"/>
           <include name="CloseBrowser"/>
           <include name="LaunchBrowser"/>
         </methods>
       </class> <!-- com.Testing.TestCases.TC1 -->
-      <class name="com.Testing.TestCases.TC4">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="test"/>
-          <include name="LaunchBrowser"/>
-        </methods>
-      </class> <!-- com.Testing.TestCases.TC4 -->
-      <class name="com.Testing.TestCases.TC3">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="LaunchBrowser"/>
-        </methods>
-      </class> <!-- com.Testing.TestCases.TC3 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
